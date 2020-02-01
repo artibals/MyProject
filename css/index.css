@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Sigmar+One|Slabo+27px&display=swap');
+
+:root {
+    --main-color: #1f1f1f;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, p, section, header, main, footer {
+    margin: 0;
+    padding: 0;
+}
+
+header .logo a{
+font-family: 'Sigmar One', cursive;
+font-size: 2rem;
+text-transform: uppercase;
+text-decoration: none;
+color: #ffffff;
+position: relative;
+right: 280px;
+bottom: 150px;
+}
+
+header nav .menu {
+    display: flex;
+    flex: 1;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+
+header nav .menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fafafa;
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header {
+    background-image: url(../img/bystronik.jpg);
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header nav .menu {
+position: relative;
+left: 270px;
+bottom: 200px;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
