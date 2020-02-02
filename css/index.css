@@ -16,12 +16,17 @@ body {
     margin: auto;
 }
 
+
 header .logo a{
-font-family: 'Sigmar One', cursive;
-font-size: 2rem;
-text-transform: uppercase;
-text-decoration: none;
-color: #ffffff;
+    font-family: 'Sigmar One', cursive;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header .logo {
+    width: 200px;
 }
 
 header nav .menu {
@@ -38,6 +43,9 @@ header nav .menu a {
     border: 1px solid transparent;
     padding: 5px;
 }
+header nav .menu a:hover {
+    border: 1px solid #fafafa;
+}
 
 header {
     background-image: url(../img/bystronik.jpg);
@@ -48,6 +56,17 @@ header {
     justify-content: space-around;
 }
 
+@media (max-width: 630px) {
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}  
 
-
-
+@media (max-width: 980px) {
+    main .service {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+}
