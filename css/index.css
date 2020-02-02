@@ -63,10 +63,3 @@ header {
         flex-direction: column;
     }
 }  
-
-@media (max-width: 980px) {
-    main .service {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-    }
-}
