@@ -16,7 +16,7 @@ body {
     margin: auto;
 }
 
-header nav .logo {
+header .logo a{
 font-family: 'Sigmar One', cursive;
 font-size: 2rem;
 text-transform: uppercase;
@@ -29,7 +29,6 @@ header nav .menu {
     flex: 1;
     padding: 0;
     list-style-type: none;
-    justify-content: flex-end;
 }    
 
 header nav .menu a {
@@ -45,6 +44,8 @@ header {
     min-height: 400px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 
