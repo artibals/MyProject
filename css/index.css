@@ -4,6 +4,7 @@
     --main-color: #1f1f1f;
     font-family: 'Oswald', sans-serif;
     scroll-behavior: smooth;
+    background-color: #cceffd;
 }
 
 h1, h2, h3, h4, p, section, header, main, footer {
@@ -63,3 +64,41 @@ header {
         flex-direction: column;
     }
 }  
+
+@media (max-width: 800px) {
+    .first-block{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}  
+
+h1, h2 {
+    margin: 10px;
+    font-family: 'Slabo', Tahoma, sans-serif;
+    color: #654170
+}
+
+.first-block p {
+    text-align: justify;
+    padding-right: 12px;
+    font-size: 1.2rem;
+    font-family: 'Slabo', sans-serif;
+}
+
+.first-block {
+display: flex;
+justify-content: space-around;
+}
+
+.laser-cutting {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    float: left;
+}
+
+.second-block p {
+    text-align: left;
+    font-family: 'Slabo', sans-serif; 
+}
