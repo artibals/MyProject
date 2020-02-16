@@ -17,6 +17,16 @@ body {
     margin: auto;
 }
 
+header {
+    background-image: url(../img/bystronik.jpg);
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
 
 header .logo a{
     font-family: 'Sigmar One', cursive;
@@ -26,80 +36,53 @@ header .logo a{
     color: #ffffff;
 }
 
+header .logo:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    transition: 0.3s;
+        
+ }
+ header .logo a:hover {
+    transition: 0.3s;
+    color:rgb(119, 228, 255)
+ }
+
 header .logo {
     width: 200px;
 }
-
-header nav .menu {
-    display: flex;
-    flex: 1;
-    padding: 0;
-    list-style-type: none;
-}    
 
 header nav .menu a {
     text-transform: uppercase;
     text-decoration: none;
     color: #fafafa;
     border: 1px solid transparent;
-    padding: 5px;
-}
-header nav .menu a:hover {
-    border: 1px solid #fafafa;
+    padding: 1px;
 }
 
-header {
-    background-image: url(../img/bystronik.jpg);
-    min-height: 400px;
-    background-size: cover;
-    background-position: center;
+header nav .menu a:hover {
+    background:#3bc4c4;
+    border-radius:50%;
+    color:rgb(6, 8, 6);
+    transition: 0.3s;
+}
+
+header nav .menu {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    flex: 10;
+    padding: 0;
+    list-style-type: none;
 }
 
-@media (max-width: 630px) {
-    header, .menu {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-}  
-
-@media (max-width: 800px) {
-    .first-block{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-}  
-
-h1, h2 {
-    margin: 10px;
-    font-family: 'Slabo', Tahoma, sans-serif;
-    color: #654170
-}
-
-.first-block p {
-    text-align: justify;
-    padding-right: 12px;
-    font-size: 1.2rem;
-    font-family: 'Slabo', sans-serif;
-}
-
-.first-block {
-display: flex;
-justify-content: space-around;
-}
-
-.laser-cutting-pic {
-    display: block;
+main .first-block img, main .{
+    height: auto;
     width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    float: right;
 }
 
-.second-block p {
+p {
     text-align: justify;
-    font-family: 'Slabo', sans-serif; 
+    padding: 7px;
+    text-indent: 20px;
 }
