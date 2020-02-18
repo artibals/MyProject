@@ -14,7 +14,6 @@
           </div>
           <nav>
              <ul class="menu">
-                <li><a href="about.html">About</a></li>
                 <li><a href="#service">Service</a></li>
                 <li><a href="#questions">Questions</a></li>
                 <li><a href="#news">News</a></li>
@@ -84,9 +83,8 @@
         </section>
         <hr>
         <section id="questions" class="questions">
-              <img src="img/questioning-man.jpg" alt="Cartoon guy with qustion marks">
               <div>
-              <h3>Frequently Asked Questions</h3>
+              <h2>Frequently Asked Questions</h2>
               <ul id="questions-answers">
                 <li>In which form it is better to send request for laser cutting estimate?</li>
                 <li>What are the minimum opening sizes (diameters) you can cut?</li>
@@ -94,32 +92,42 @@
                 <li>Do you perform laser cutting of wood, plastic and other materials?</li>
                 <li>Do you provide discounts for the volume?</li>
               </ul>
-              </div>           
+              </div>
+              <div class="question-image">
+              <img src="img/answers-questions.jpg" alt="two hands with question marks and light bulbs" class="bottom">
+              <img src="img/questions-answers.jpg" alt="two hands with question marks and light bulbs" class="top">
+              </div>         
         </section>
         <hr>
         <section id="news">
             <h2>News</h2>
             <div class="news-block">
-            <p><img src="img/appetite-for-innovation.jpg" alt="man painting metal detail"></p>
+            <div class="news-block1">  
+            <img src="img/appetite-for-innovation.jpg" alt="man painting metal detail">
             <p>December 2019</p> 
             <p>Buhler has set its targets high: simultaneously tackling two of the biggest global challenges – 
             feeding the world’s population and ensuring mobility in 2050.
             Buhler’s largest production facility is located in Liyang, China. 
             The state-of-the-art factory exemplifies why Buhler is a leader in its markets.</p>
-            <a href="https://www.bystronic.com/en/news/in-depth/appetite-for-innovation.php">Continue reading</a>
-            
-            <p><img src="img/bystrokurago.jpg" alt="man with computers"><p>
-            <p>December 2019</p> 
+            <span><a href="https://www.bystronic.com/en/news/in-depth/appetite-for-innovation.php">Continue reading</a></span>
+            </div>
+
+            <div class="news-block2">  
+            <img src="img/bystrokurago.jpg" alt="man with computers">
+            <p>December 2019</p>
             <p>In order to create pioneering process solutions that drive forward a smart factory environment, 
             Bystronic is joining forces with the software specialist Kurago within the framework of an innovation partnership.</p>
             <a href="https://www.bystronic.com/en/news/in-depth/Bystronic-and-Kurago-become-innovation-partner.php">Continue reading</a>
+            </div>
 
-            <p><img src="img/bystronic-world.jpg" alt="roads with cars"><p>
+            <div class="news-block3">
+            <img src="img/bystronic-world.jpg" alt="roads with cars">
             <p>November 2019</p> 
             <p>Service marathon in midsummer.
             Logistics of the future. An appetite for innovation. 
             A company with a long tradition at the heart of the automotive industry.</p>
             <a href="https://www.bystronic.com/en/news/BystronicWorld/BystronicWorld-2019-3.php">Continue reading</a>
+            </div>  
             </div>
         </section>
         <hr>
@@ -127,7 +135,7 @@
     <footer id="contacts">
         <div class="links">
         <h2>Links:</h2>    
-           <ul>
+           <ul class="links-list">
              <li><a href="https://www.facebook.com/orest.andrushkiv"><img src="img/facebook-icon.jpg" alt="facebook icon"></a>
              <a href="https://www.facebook.com/orest.andrushkiv">We are on Facebook</a></li>
              <li><a href="https://www.youtube.com/watch?v=RV2twyAE58Q"><img src="img/youtube-icon.jpg" alt="youtube icon"></a>
@@ -136,23 +144,26 @@
              <a href="#logotype">Go Up</a></li>
            </ul>
         </div>
+        <hr>
+        <div class="find-contact">
+        <div class="find-us">
+          <h2>Find us:</h2>
+             <ul class="find-us-list">
+               <li><img src="img/location.jpg" alt="location mark">790X2, Lviv reg., Lviv, Unknow Street, 73</li>
+               <li><img src="img/phone-call-icon.jpg" alt="phone icon">(032) 2X3-X1-22</li>
+               <li><img src="img/phone-call-icon.jpg" alt="phone icon">(032) 2X3-XX-00</li>
+               <li><img src="img/email-icon.jpg" alt="email icon">artibals@gmail.com</li>
+             </ul>
+        </div>
         <div class="contact">
         <h2>Contact us:</h2>    
             <form action="contact">
-                <input type="text" placeholder="Name"><br>
-        	    <input type="email" placeholder="E-mail"><br>
-        		<textarea placeholder="Message"></textarea><br>
-                <input type="submit" value="Fly Birdie">
+              <input type="text" name="field1" placeholder="Your Name" />
+              <input type="email" name="field2" placeholder="Email Address" />
+              <textarea name="field3" placeholder="Type your Message"></textarea>
+              <input type="submit" value="Send" />
         	</form>
         </div>
-        <div class="find-us">
-        <h2>Find us:</h2>
-           <ul>
-             <li><img src="img/location.jpg" alt="location mark">790X2, Lviv reg., Lviv, Unknow Street, 73</li>
-             <li><img src="img/phone-call-icon.jpg" alt="phone icon">(032) 2X3-X1-22</li>
-             <li><img src="img/phone-call-icon.jpg" alt="phone icon">(032) 2X3-XX-00</li>
-             <li><img src="img/email-icon.jpg" alt="email icon">artibals@gmail.com</li>
-           </ul>
         </div>
     </footer>
 </body>

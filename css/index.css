@@ -12,6 +12,25 @@ h1, h2, h3, h4, p, section, header, main, footer {
     padding: 0;
 }
 
+hr {
+    border: 5px solid rgb(18, 142, 190);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+p {
+    text-align: justify;
+    padding: 7px;
+    text-indent: 20px;
+}
+
+h1, h2, h3 {
+    margin: 10px;
+    font-family: 'Slabo', Tahoma, sans-serif;
+    color: #065991
+}
+
 a {
     text-decoration: none;
 }
@@ -42,7 +61,6 @@ header .logo a{
     font-family: 'Sigmar One', cursive;
     font-size: 2rem;
     text-transform: uppercase;
-    text-decoration: none;
     color: #ffffff;
 }
 
@@ -65,10 +83,9 @@ header .logo {
 
 header nav .menu a {
     text-transform: uppercase;
-    text-decoration: none;
     color: #fafafa;
     border: 1px solid transparent;
-    padding: 1px;
+    padding: 5px;
 }
 
 header nav .menu a:hover {
@@ -93,23 +110,107 @@ main .first-block img, main .questions img, video{
     max-width: 100%;
 }
 
-hr {
-    border: 5px solid rgb(18, 142, 190);
-    border-radius: 5px;
-    margin-bottom: 20px;
+.question-image {
+    position: relative;
+    height:322px;
+    width:500px;
+    margin: 0 auto;
+  }
+  
+.question-image img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+  
+  .question-image img.top:hover {
+    opacity: 0;
 }
 
-p {
-    text-align: justify;
-    padding: 7px;
-    text-indent: 20px;
-}
+footer ul.links-list, footer ul.find-us-list {
+    list-style-type: none;    
+    }
 
-h1, h2, h3 {
-    margin: 10px;
-    font-family: 'Slabo', Tahoma, sans-serif;
-    color: #065991
+.contact{
+        font: 95% Arial, Helvetica, sans-serif;
+        max-width: 400px;
+        margin: 10px auto;
+        padding: 16px;
+        background: #F7F7F7;
+    }
+.contact h2{
+        background: rgb(16, 182, 248);
+        padding: 20px 0;
+        font-size: 140%;
+        font-weight: 300;
+        text-align: center;
+        color: #fff;
+        margin: -16px -16px 16px -16px;
 }
+.contact input[type="text"],
+.contact input[type="date"],
+.contact input[type="datetime"],
+.contact input[type="email"],
+.contact input[type="number"],
+.contact input[type="search"],
+.contact input[type="time"],
+.contact input[type="url"],
+.contact textarea,
+.contact select 
+{
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        -o-transition: all 0.30s ease-in-out;
+        outline: none;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        background: #fff;
+        margin-bottom: 4%;
+        border: 1px solid #ccc;
+        padding: 3%;
+        color: #555;
+        font: 95% Arial, Helvetica, sans-serif;
+}
+.contact input[type="text"]:focus,
+.contact input[type="date"]:focus,
+.contact input[type="datetime"]:focus,
+.contact input[type="email"]:focus,
+.contact input[type="number"]:focus,
+.contact input[type="search"]:focus,
+.contact input[type="time"]:focus,
+.contact input[type="url"]:focus,
+.contact textarea:focus,
+.contact select:focus
+{
+    box-shadow: 0 0 5px rgb(16, 182, 248);
+    padding: 3%;
+    border: 1px solid rgb(16, 182, 248);
+}
+    
+.contact input[type="submit"],
+.contact input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: rgb(16, 182, 248);
+    border-bottom: 2px solid rgb(35, 89, 189);
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;	
+    color: #fff;
+}
+.contact input[type="submit"]:hover,
+.contact input[type="button"]:hover{
+    background: rgb(6, 72, 194);
+}    
 
 @media (min-width: 620px) {
     header {
@@ -128,15 +229,43 @@ h1, h2, h3 {
     flex-direction: row;
     justify-content: space-around;
     }
-    header nav .menu a{
-    padding: 5px;
-    }
-
+    
     .first-block, .third-block, .questions{
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: auto auto;
+    grid-column-gap: 10px;
     }
+
+    .news-block {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 20px;
+    }
+
+    .news-block1, .news-block2, .news-block3 {
+    display: grid;
+    grid-template-rows: 35% 10% 45% 10%;
+    grid-row-gap: 10px;
+    justify-items: center;   
+    }
+    
+    .news-block img, .news-block p {
+        width: 90%;
+    }
+
+    footer .links .links-list {
+    display: grid;
+    grid-template-columns: auto 43%;
+    grid-template-rows: auto auto;
+    grid-row-gap: 50px;
+    }
+
+    footer .find-contact {
+    display: grid;
+    grid-template-columns: auto auto;
+    }
+
 }
 
 
