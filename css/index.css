@@ -2,9 +2,8 @@
 
 :root {
     --main-color: #1f1f1f;
-    font-family: 'Oswald', sans-serif;
     scroll-behavior: smooth;
-    background-color: #cceffd;
+    background-color: rgb(18, 142, 190);
 }
 
 h1, h2, h3, h4, p, section, header, main, footer {
@@ -35,6 +34,14 @@ a {
     text-decoration: none;
 }
 
+.arrow-up {
+    position: fixed;
+    right: 0px;   
+    bottom: 0px;
+    z-index: 1;
+    opacity: 0.7; 
+}
+
 a:hover {
     transition: 0.3s;
     color:rgb(15, 15, 15);
@@ -43,7 +50,11 @@ a:hover {
 body {
     max-width: 980px;
     margin: auto;
+    background-color: #cceffd;
+    border: solid;
+    font-family: 'Oswald', sans-serif;
 }
+
 
 header {
     background-image: url(../img/bystronik.jpg);
@@ -72,7 +83,7 @@ header .logo:hover {
         
  }
 
- header .logo a:hover {
+header .logo a:hover {
     transition: 0.3s;
     color:rgb(119, 228, 255)
  }
@@ -104,30 +115,14 @@ header nav .menu {
     list-style-type: none;
 }
 
-main .first-block img, main .questions img, video{
+main .first-block img, .question-image img.top, video{
     display: block;
     height: auto;
-    max-width: 100%;
+    width: 100%;
 }
 
-.question-image {
-    position: relative;
-    height:322px;
-    width:500px;
-    margin: 0 auto;
-  }
-  
-.question-image img {
-    position:absolute;
-    left:0;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-}
-  
-  .question-image img.top:hover {
-    opacity: 0;
+.question-image img.bottom{
+    display: none;
 }
 
 footer ul.links-list, footer ul.find-us-list {
@@ -141,6 +136,7 @@ footer ul.links-list, footer ul.find-us-list {
         padding: 16px;
         background: #F7F7F7;
     }
+
 .contact h2{
         background: rgb(16, 182, 248);
         padding: 20px 0;
@@ -210,9 +206,13 @@ footer ul.links-list, footer ul.find-us-list {
 .contact input[type="submit"]:hover,
 .contact input[type="button"]:hover{
     background: rgb(6, 72, 194);
-}    
+} 
 
-@media (min-width: 620px) {
+footer .find-contact {
+margin-bottom: 40px;
+}
+
+@media (min-width: 800px) {
     header {
         display: flex;
         flex-direction: row;
@@ -235,6 +235,30 @@ footer ul.links-list, footer ul.find-us-list {
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 10px;
+    }
+
+    .question-image img.bottom{
+        display: block;
+    } 
+
+    .question-image {
+        position: relative;
+        height: 350px;
+        width: 500px;
+        margin: 0 auto;
+      }
+      
+    .question-image img {
+        position:absolute;
+        left:0;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+    }
+      
+      .question-image img.top:hover {
+        opacity: 0;
     }
 
     .news-block {
@@ -263,9 +287,23 @@ footer ul.links-list, footer ul.find-us-list {
 
     footer .find-contact {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 55% 45%;
     }
 
 }
 
+
+/* Accordion */
+.acc-content {
+    display: none;
+    padding: 5px;
+}
+.acc-opener {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+ }
+.acc-li-open .acc-content {
+    display: block;
+}
 
