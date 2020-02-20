@@ -16,8 +16,9 @@ main .gallery-list .gallery-image {
  
 div.container {
     text-align: center;
-    padding: 10px 20px;
+    padding: 0;
 }
+
 
 /* The Modal (background) */
 .myModal {

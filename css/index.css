@@ -122,13 +122,27 @@ main .first-block img, .question-image img.top, video{
     width: 100%;
 }
 
+.question-list {
+    list-style-image: url(../img/arrow.png);
+}
+
+.question-image img.top:hover {
+    transform: scaleX(-1);
+}
+
 .question-image img.bottom{
     display: none;
 }
 
 footer ul.links-list, footer ul.find-us-list {
     list-style-type: none;    
-    }
+}
+
+footer .find-us-list {
+    display: grid;
+    grid-row-gap: 10px;
+    padding-bottom: 20px;
+}
 
 .contact{
         font: 95% Arial, Helvetica, sans-serif;
@@ -213,6 +227,12 @@ footer .find-contact {
 margin-bottom: 40px;
 }
 
+footer .links .links-list {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 50px;
+    }
+
 @media (min-width: 800px) {
     header {
         display: flex;
@@ -261,6 +281,7 @@ margin-bottom: 40px;
       
       .question-image img.top:hover {
         opacity: 0;
+        transform: none;
     }
 
     .news-block {
@@ -299,9 +320,10 @@ margin-bottom: 40px;
 .acc-content {
     display: none;
     padding: 5px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .acc-opener {
-    display: flex;
     position: relative;
     cursor: pointer;
  }
