@@ -13,3 +13,4 @@ list.addEventListener('click', function openAccordeon(event){
     }
     
 })
+

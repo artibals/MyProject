@@ -315,9 +315,11 @@ margin-bottom: 40px;
     left: 50%;
     top: 27%;
     transform: translateX(-50%) translateY(-50%);
-    color: rgb(0, 255, 179);
+    color: white;
     font-size: 60px;
     font-family: Lacquer;
     letter-spacing: 7px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
